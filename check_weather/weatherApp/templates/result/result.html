@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body style="
+margin: 0;
+padding: 0;
+background: -webkit-linear-gradient(to right, #514A9D,#24c6DC);
+background: linear-gradient(to right,#514A9D,#24c6DC);">
+
+
+<div style="
+margin: 0;
+padding: 0;
+background: -webkit-linear-gradient(to right, #514A9D,#24c6DC);
+background: linear-gradient(to right,#514A9D,#24c6DC);">
+
+    <div class="container h-100">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-12 col-xs-12 pt-5">
+                <div class="card border-0 p-3 shadow-sm text-center">
+                    <h5 class="lead text-muted"><B>Country Code</B> :</span> {{country_code}}</h5>
+                    <h5 class="lead text-muted"><B>Coordinates [X,Y]</b> : {{coordinate}}</h5>
+                    <h5 class="lead text-muted"><B>Temperature in Celsius</B> : {{temp}}</h5>
+                    <h5 class="lead text-muted"><B>Pressure </B>: {{pressure}} </h5>
+                    <h5 class="lead text-muted"><B>Humidity </B>: {{humidity}}</h5>
+                    <h5 class="lead text-muted"><B>Forecast </B>: {{main}} <img
+                        src="http://openweathermap.org/img/w/{{icon}}.png" alt="Image" style="width:70px"></h5>
+                    <h5><span class="lead text-muted"><B>Description</B> : </span> {{description}}</h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock content %}
